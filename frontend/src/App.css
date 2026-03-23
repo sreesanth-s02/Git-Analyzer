@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+
+.app {
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* 🔍 INPUT */
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* 🔄 LOADER */
+.loader {
+  margin: 20px auto;
+  border: 5px solid #1e293b;
+  border-top: 5px solid #22c55e;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 📊 DASHBOARD */
+.dashboard {
+  margin-top: 30px;
+}
+
+/* 📦 GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* 📊 CHART */
+.chart-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* 🤖 INSIGHT BOX */
+.insight-ai {
+  background: #020617;
+  border: 1px solid #334155;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.recommend {
+  color: #22c55e;
+  margin-top: 10px;
+}
+
+/* 💪 STRENGTH / WEAKNESS */
+.insights-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.strengths,
+.weaknesses {
+  flex: 1;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.strengths p {
+  color: #22c55e;
+}
+
+.weaknesses p {
+  color: #ef4444;
+}
+
+/* ===================================================== */
+/* 🧑‍💼 RECRUITER MODE UI */
+/* ===================================================== */
+
+.recruiter-dashboard {
+  text-align: center;
+}
+
+.recruiter-score {
+  font-size: 48px;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.recruiter-category {
+  margin-bottom: 20px;
+  color: #94a3b8;
+}
+
+.recruiter-box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+.summary {
+  margin-top: 10px;
+  color: #cbd5f5;
+}
